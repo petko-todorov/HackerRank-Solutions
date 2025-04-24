@@ -1,3 +1,5 @@
+# https://www.hackerrank.com/challenges/word-order/problem
+
 n = int(input())
 
 words = [input() for x in range(n)]
