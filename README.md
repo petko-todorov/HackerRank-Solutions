@@ -1,1 +1,1 @@
-# HackerRank-Solutions
+# Online-Solutions
