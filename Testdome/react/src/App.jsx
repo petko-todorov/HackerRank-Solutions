@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import CharacterAttributes from './components/CharacterPoints';
 import TodoList from './components/TodoList';
+import FocusableInput from './components/FocusableInput';
+import Message from './components/ToggleMessage';
 
 const items = [
     { text: 'Buy grocery', done: true },
@@ -12,6 +14,7 @@ function App() {
     return (
         <>
             <CharacterAttributes totalPoints={15} />
+            <hr />
             <TodoList
                 items={items}
                 onListClick={(event) => console.log('List clicked!')}
@@ -19,6 +22,10 @@ function App() {
                     console.log(item, event);
                 }}
             />
+            <hr />
+            <FocusableInput shouldFocus={true} />
+            <hr />
+            <Message />
         </>
     );
 }
